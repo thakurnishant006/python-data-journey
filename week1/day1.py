@@ -96,3 +96,17 @@ print(employee.values())
 #Delete a key 
 del employee["city"]
 print(employee)
+
+#Q1 : Diff between List and dict 
+# List We use the list when we want to store the sequence of data and 
+# Dict : we use the dictionary when we want to store the related data using key-value
+# List : We can access the element using the index; Search may require scanning; It allows duplicates
+# Dict : We can acces the element using the keys; Search is faster using the keys: Keys must be unique
+
+#Q2 : .get() do that [] doesn't
+# .get() can safely return default value when key is not present and can be used when we are not sure if key is present or not.
+# [] raises key error , must be used when we are sure about a key is present
+
+#Q3 : why are strings immutable and list mutable
+# String are immutable so that they they can be reused and used as hash map
+# List are used when data is subject to change , we can update , insert , delete data without creating new list.

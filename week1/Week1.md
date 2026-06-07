@@ -84,3 +84,27 @@
 - List = Excel column (collection of same type items)
 - Dictionary = Excel row (named properties of one thing)
 - List of dictionaries = entire Excel sheet = database table
+
+#----------Day2---------------------------------------
+## Day 2 — Operators & Conditionals
+
+- / always returns float: 10/3 = 3.333
+- // floor division, removes decimal: 10//3 = 3
+- % modulus, gives remainder: 10%3 = 1
+- ** power: 10**3 = 1000
+
+- Augmented assignment shortcuts:
+  x += 5 → x = x + 5
+  x *= 2 → x = x * 2
+
+- == compares, = assigns (common mistake)
+
+- if/elif/else → first true condition wins, rest skipped
+
+- for item in list → loops each item automatically
+- for i in range(1,6) → 1,2,3,4,5 (stop not included)
+- for key,value in dict.items() → loops dictionary
+
+- Indentation is critical in Python
+  → 4 spaces inside if/for/while
+  → Wrong indentation = crash
