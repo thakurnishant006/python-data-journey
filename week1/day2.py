@@ -67,7 +67,7 @@ if age <30 and experience >=2:
 else:
     print("Different category")
 
-#For Loop
+# ----------Section 3 For Loop-------------------------
 # Loop over a list
 skills = ["Python", "SQL", "Excel", "PowerBI", "Azure"]
 for skill in skills:
@@ -99,3 +99,52 @@ employee = {
 }
 for key , value in employee.items():
     print(f"{key} : {value}")
+
+#----------Section 4 For loop -------------------
+count = 1
+while count<=5:
+    print(f"count: {count}")
+    count +=1
+
+print("-"*30)
+
+#Practical example - saving money
+saving = 0
+target = 1000000
+month = 0
+
+while saving < target:
+    saving+=50000
+    month+=1
+    print(f"Month {month}: savings = {saving}")
+print(f"Reached target in {month} months")
+
+print("-"*30)
+
+#While with break
+number = [10,25,3,47,8,99,12]
+
+for numbers in number:
+    if numbers > 50:
+        print(f"First number above 50: {numbers}")
+        break
+
+salaries = [80000, 150000, 200000, 95000, 175000, 60000]
+
+for sal in salaries:
+    if sal >= 150000:
+        print(f"Above target: {sal}")
+    else:
+        print(f"Below target: {sal}")
+
+#9
+count = 1
+while count <= 5:
+    print(count)
+    count+=1
+
+#10
+balance = 5000
+while balance !=0:
+    balance -= 1000
+print("Account empty")
