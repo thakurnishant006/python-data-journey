@@ -109,4 +109,5 @@
   → 4 spaces inside if/for/while
   → Wrong indentation = crash
 
-  
+  ## Day 3 Tuples
+  - Tuples are used to stoe the items , they are immutable , ( we cannot add or delete the items from it)

@@ -148,3 +148,52 @@ balance = 5000
 while balance !=0:
     balance -= 1000
 print("Account empty")
+
+# Find the greatest number in the List
+max_num = [12,3,4,5,6,77,7]
+chk = max_num[0]
+for i in max_num:
+    if chk < i:
+        chk = i
+print(chk)
+
+# Remove a duplicate from the list 
+lst1 = [1,2,3,4,5,1,2,34,5]
+unq = []
+for i in lst1:
+    if unq not in lst1:
+        unq.append(i)
+print(unq)
+
+# Write a program to translate word into digits
+# 1234 => one two three four
+mapp = {
+    "1":"One",
+    "2":"Two",
+    "3":"Three",
+    "4":"Four",
+    "5":"Five",
+    "6":"Six",
+    "7":"Seven",
+    "8":"Eight",
+    "9":"Nine"
+}
+phone = input("Phone: ")
+out = ""
+for i in phone:
+    out+= mapp.get(i,"!") + " "
+print(out)
+# 1234 => symbol to emoji
+emoji = { 
+    ":)": "😊", 
+    ":(": "🙁", 
+    ":|": "😡", 
+    ":/": "😕" 
+}
+# Split => split the list to string
+txt = input("> ")
+word = txt.split()
+out = ""
+for i in word:
+    out += emoji.get(i, i) + " "
+print(out)

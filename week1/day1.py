@@ -48,9 +48,13 @@ print(skills[1:3])#SQL , Excel
 #list Info
 print(len(skills))#4
 
+# Add list item
+skills.insert(0,"AWS") # Add index then value 
 #Modifying list
 skills.append("Azure")#add azure in last
 skills.remove("Excel")#remove the excel
+skills.pop()# Removes the last item from the list.
+skill = skills.copy() # create a copy list
 print(skills)
 
 #Change specific item
@@ -61,6 +65,20 @@ skills.reverse() #reverse the items
 #check existence
 print("SQL" in skills)#True
 print("Tableau" in skills)#False
+skill.clear() # Empty the list
+#-------------------2D List-----------------
+# items in a list is another list 
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+# Access the list
+matrix[0] # returns [1,2,3]
+# To iterate and print all the numbers
+for ii in matrix:
+    for jj in ii:
+        print(jj)
 
 #------------Dictionaries-------------
 employee = {
