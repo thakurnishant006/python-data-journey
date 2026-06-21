@@ -1,84 +1,42 @@
 ## Things I understood clearly:
-2d list 
-tuple
-unpacking
-dict program logic--- > till  here previous days
----------- Functions----------
-paramaters -> placeholder in the function to recieve information , arguments are the actual piece of information that we supply to the fucntion
-def(keyword) function_name(parameters):
-    function body
-    return statement
+oops - Classes and instances (Tutorial 1)
+clases -> They allow us to logically group data and function in a way thats easy to reuse and also easy to build upon.
+data and function -> attributes and methods
+class (keyword) class_name:
 
 
-add two blank lines
+diff between class and Instance of class:
+Class is a blueprint for creating instances.
+each new objects we create using the class is the instance of the class
+-- emp_1 = class_name() # instance 
 
-function_name(arguments for functions) => function call
+- __init__ is a constructor that runs automatically when an object is created.
+- self = reference to the current instance of the class , used to access attributes and methods. ( self is the parameter used to receive the object that Python automatically passes when an instance method is called. )
+- the argument should be same like put in the parameter.
+-  when we run the instance with the class name we need to add instance in the arguments ( because the class doesnt know which instance this suppose to run)
 
-def greet_user(x):
-    print(f"Hi {x}")
+-----Tutorial 2 ( Class Variable)---------------------
+class variables are the variables that are shared by all the instances of the class , instance var can be unique but class var must be same.(It is a global variable that can be used any where inside the class )
 
-
-greet_user("Nishant")
--> defines function first and then call them
-
-Keyword arguments -> are like the value assigned to parameters so that position of argument doesnt matter.
-Return statement -> fuction that returns some value
-
-def calc(x,y):
-    x = int(x)
-    y = int(y)
-    return x + y
+---------- Tutorial 3 ( Class methods and static methods)
 
 
-print(calc(20,20)) # prints 40
-
-- By default the fuction return none value if return keyword not present
-
-- def emoji_con(txt):
-    emoji = {
-        ":)": "😊",
-        ":(": "🙁",
-        ":|": "😡",
-        ":/": "😕"
-    }
-    word = txt.split()
-    out = ""
-    for i in word:
-        out += emoji.get(i,i) + " "
-    return out
-
-
-message = input("> ")
-print(emoji_con(message))
-
------------- Handle Error in python--------
-
-Exceptions - try except
-
-try:
-    age = int(input('Age: '))
-    print(age)
-except ValueError:
-    print("Non integer value")
-
-
-
- => this means instead of crashing the program type this error message on the program
- complete the program with exit code 0
-
- comments in pyhton => # -> one line """ string literals they are just ignored by python """
 ## Things that confused me:
-unpacked in * and ** in functional call
+he used +=1 init method used the class name however if he would have used self then what would have happen.
+- What is the benefit of the using the class method instead of the regular method
 ## Things I want to try in code:
-
+decorators
 ## New words I heard (write them even if you don't know them yet):
-
-args and kwargs
+decorators - > want to know it deeply
 ### New thinks i learnd form the corey video
-pass -> just continue the function execution ( We donot want to do anything right now but it will not throw any error)
-*args - these are used when we dont know how many arguments are comming. 
-**kwargs - keyword arguments where we give keyword during the function call
-for the args we get the tuple 
-for the kwargs we get the dictionable
+class variables are the variables that are shared by all the instances of the class , instance var can be unique but class var must be same.(It is a global variable that can be used any where inside the class ) we can access it outside of the class
 
-doc string """ helps to document what the fuctions can do """
+print(emp1.__dict__) -> shows attributes and the values in key value pair.
+- if we use class.class_var and changes the value it will be changed for all the methods 
+- if we use instance.class_var and changes its value the value will be changed for only the particular instance -> it create a new namespace inside particular methods.
+- By default the regular method takes the instance as the first argument in the form of 'self'
+- the class method takes the class as the first argument 
+
+- To turn the regular methods into the class methods we use the decorators.
+- @classmethod
+to use the class method there is a common convetion that we use : cls instead of self -> it will change the value for all the instance as we are using it for the class.

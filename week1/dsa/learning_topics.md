@@ -2,10 +2,10 @@
 
 ## Arrays
 
-* [ ] Traverse array
+* [x] Traverse array
 * [ ] Reverse array
-* [ ] Find max/min
-* [ ] Remove duplicates
+* [x] Find max/min
+* [x] Remove duplicates
 
 ## Searching
 
