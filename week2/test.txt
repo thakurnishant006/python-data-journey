@@ -1,0 +1,10 @@
+Sample Test File
+================
+
+This file contains example lines for a random test case.
+
+1. First sample item
+2. Second sample item
+3. Third sample item
+
+Use this text to verify file reading and parsing behavior.
