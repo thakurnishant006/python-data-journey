@@ -2,9 +2,9 @@
 ================================
         PROFILE CARD
 ================================
-Name : Nishant
-Age : 29
+Name : Nishant Thakur
+Age : 26
 City : Delhi
-Skills : Python, Sql, Excel
-goal : Data engineer at microsoft
+Skills : Python, Excel, Azure
+Goal : Data engineer at Microsoft
 ================================
